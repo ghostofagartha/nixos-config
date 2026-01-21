@@ -28,7 +28,6 @@
     onlyoffice-desktopeditors
     rustup
     tor-browser
-    brave
     discord
     nmap
     mpv
