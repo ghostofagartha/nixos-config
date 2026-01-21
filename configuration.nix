@@ -69,6 +69,7 @@
     gnome-tour gnome-maps gnome-weather geary epiphany
     gnome-characters totem iagno tali hitori atomix
   ]);
+  services.gnome.gcr-ssh-agent.enable = false;
 
   # --- GLOBAL WINE SETTINGS ---
   environment.variables = {
@@ -114,6 +115,7 @@
 
   # --- SSH Services ---
   services.openssh.enable = true;
+  programs.ssh.startAgent = true;
 
   # --- NIX MAINTENANCE ---
   nix.gc = {
