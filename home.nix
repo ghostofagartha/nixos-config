@@ -5,6 +5,7 @@
   home.homeDirectory = "/home/aori";
 
   home.packages = with pkgs; [
+    # Tools
     p7zip
     unzip
     nodejs
@@ -14,36 +15,43 @@
     gcc
     gnumake
     wget
-    firejail
-    htb-toolkit
+    tree
+    fastfetch
+    # Browsers
     firefox
+    mullvad-browser
+    tor-browser
+    # Programming
     jdk25_headless
     jetbrains-toolbox
     jetbrains.idea
     jetbrains.pycharm
-    tree
-    gamemode
     python3
     jetbrains.rust-rover
-    onlyoffice-desktopeditors
     rustup
-    tor-browser
-    discord
+    # Cyber Security
     nmap
-    mpv
-    pear-desktop
-    ffmpeg
     openvpn
     sqlmap
-    thunderbird
-    whatsapp-electron
     torsocks
     wireshark-qt
     burpsuite
-    obsidian
     macchanger
-    fastfetch
+    firejail
+    htb-toolkit
+    # Media
+    mpv
+    pear-desktop
+    ffmpeg
+    # Documents
+    onlyoffice-desktopeditors
+    obsidian
+    # Internet
+    discord
+    whatsapp-electron
+    thunderbird
     zenity
+    # Gaming
     mangohud
   ];
 
@@ -58,11 +66,6 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-
-    shellAliases = {
-      yt-mp3 = "yt-dlp -x --audio-format mp3 --audio-quality 0";
-      yt-premium = "yt-dlp --cookies-from-browser firefox";
-    };
   };
 
   programs.home-manager.enable = true;
