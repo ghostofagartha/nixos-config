@@ -3,12 +3,10 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-flatpak.url = "github:gmodena/nix-flatpak";
     stylix.url = "github:nix-community/stylix";
   };
 
@@ -23,7 +21,6 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.aori = import ./home.nix;
-          home-manager.extraSpecialArgs = { inherit inputs; };
         }
       ];
     };

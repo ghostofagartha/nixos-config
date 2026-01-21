@@ -96,17 +96,11 @@
     ];
   };
 
-  # --- Flatpak ---
-  services.flatpak.enable = true;
-  
   # --- SYSTEM PACKAGES ---
   environment.systemPackages = with pkgs; [
     vim
     git
-    fastfetch
     wineWowPackages.stable
-    zenity
-    mangohud
   ];
   
   # --- System Fonts ---
