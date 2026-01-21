@@ -42,6 +42,7 @@
     torsocks
     wireshark-qt
     burpsuite
+    metasploit
     obsidian
     macchanger
     fastfetch
