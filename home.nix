@@ -33,7 +33,6 @@
     nmap
     mpv
     pear-desktop
-    yt-dlp
     ffmpeg
     openvpn
     sqlmap
