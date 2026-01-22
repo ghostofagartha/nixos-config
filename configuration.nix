@@ -101,6 +101,9 @@
     vim
     git
     wineWowPackages.stable
+    nh
+    nix-output-monitor
+    nvd
   ];
   
   # --- System Fonts ---
@@ -126,4 +129,5 @@
   nix.settings.auto-optimise-store = true;
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "25.05";
+  environment.variables.FLAKE = "/home/aori/.dotfiles";
 }
